@@ -1,0 +1,457 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-background text-on-surface antialiased;
+
+    .mentions {
+        width: 100%;
+    }
+
+    .mentions__control {
+        background-color: white;
+        border-radius: 9999px;
+        padding: 0.5rem 1rem;
+        border: 1px solid #d1d5db;
+    }
+
+    .mentions__input {
+        padding: 0;
+        border: 0;
+        outline: 0;
+    }
+
+    .mentions__suggestions__list {
+        background-color: white;
+        border: 1px solid #d1d5db;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+
+    .mentions__suggestions__item {
+        padding: 0.5rem 1rem;
+    }
+
+    .mentions__suggestions__item--focused {
+        background-color: #f3f4f6;
+    }
+
+    .mentions__mention {
+        background-color: #e0d4ec;
+        padding: 2px 1px;
+        border-radius: 4px;
+    }
+
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    /* For Firefox */
+    scrollbar-width: none;
+    /* For Internet Explorer and Edge */
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    /* For Chrome, Safari, and Opera */
+    display: none;
+  }
+}
+
+/* Premium Hero Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(74, 218, 210, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(74, 218, 210, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Premium gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #4ADAD2 0%, #FFFFFF 50%, #4ADAD2 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Premium button hover effects */
+.premium-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.premium-button:hover::before {
+  left: 100%;
+}
+
+/* Premium backdrop blur effect */
+.backdrop-blur-premium {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Premium shadow effects */
+.shadow-premium {
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 0 20px rgba(74, 218, 210, 0.1);
+}
+
+.shadow-premium-hover {
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 30px rgba(74, 218, 210, 0.2);
+}
+
+/* Premium Text Effects */
+.text-glow {
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.3),
+    0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.text-glow-secondary {
+  text-shadow: 
+    0 0 10px rgba(74, 218, 210, 0.8),
+    0 0 20px rgba(74, 218, 210, 0.6),
+    0 0 30px rgba(74, 218, 210, 0.4);
+}
+
+/* Premium Border Effects */
+.border-glow {
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(74, 218, 210, 0.3)) border-box;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Premium Background Effects */
+.bg-premium-gradient {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(74, 218, 210, 0.1) 25%, 
+    rgba(255, 255, 255, 0.05) 50%, 
+    rgba(74, 218, 210, 0.1) 75%, 
+    rgba(255, 255, 255, 0.1) 100%);
+}
+
+/* Enhanced Shimmer Animation */
+@keyframes enhanced-shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+  }
+}
+
+.animate-enhanced-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-enhanced-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: enhanced-shimmer 2s infinite;
+}
+
+/* Premium Pulse Effect */
+@keyframes premium-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.animate-premium-pulse {
+  animation: premium-pulse 3s ease-in-out infinite;
+}
+
+
+
+/* Moving Stars Animation */
+@keyframes float-star-1 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translate(20px, -15px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-10px, 25px);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translate(15px, -10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+}
+
+@keyframes float-star-2 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+  33% {
+    transform: translate(-25px, 20px);
+    opacity: 1;
+  }
+  66% {
+    transform: translate(30px, -15px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+}
+
+@keyframes float-star-3 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(40px, 30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.5;
+  }
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 4px rgba(255, 255, 255, 1),
+    0 0 8px rgba(255, 255, 255, 0.9),
+    0 0 12px rgba(255, 255, 255, 0.8),
+    0 0 16px rgba(255, 255, 255, 0.6);
+}
+
+.star-1 {
+  top: 15%;
+  left: 20%;
+  width: 2px;
+  height: 2px;
+  animation: float-star-1 8s ease-in-out infinite;
+}
+
+.star-2 {
+  top: 25%;
+  left: 30%;
+  width: 1px;
+  height: 1px;
+  animation: float-star-2 12s ease-in-out infinite;
+}
+
+.star-3 {
+  top: 20%;
+  left: 45%;
+  width: 1.5px;
+  height: 1.5px;
+  animation: float-star-3 10s ease-in-out infinite;
+}
+
+.star-4 {
+  top: 35%;
+  left: 15%;
+  width: 1px;
+  height: 1px;
+  animation: float-star-1 9s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.star-5 {
+  top: 30%;
+  left: 55%;
+  width: 2px;
+  height: 2px;
+  animation: float-star-2 11s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.star-6 {
+  top: 45%;
+  left: 25%;
+  width: 1px;
+  height: 1px;
+  animation: float-star-3 13s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.star-7 {
+  top: 40%;
+  left: 40%;
+  width: 1.5px;
+  height: 1.5px;
+  animation: float-star-1 7s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+.star-8 {
+  top: 55%;
+  left: 20%;
+  width: 1px;
+  height: 1px;
+  animation: float-star-2 14s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.star-9 {
+  top: 50%;
+  left: 35%;
+  width: 2px;
+  height: 2px;
+  animation: float-star-3 8s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.star-10 {
+  top: 65%;
+  left: 30%;
+  width: 1px;
+  height: 1px;
+  animation: float-star-1 10s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.star-11 {
+  top: 60%;
+  left: 50%;
+  width: 1.5px;
+  height: 1.5px;
+  animation: float-star-2 9s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+.star-12 {
+  top: 75%;
+  left: 25%;
+  width: 1px;
+  height: 1px;
+  animation: float-star-3 12s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.star-13 {
+  top: 70%;
+  left: 45%;
+  width: 2px;
+  height: 2px;
+  animation: float-star-1 11s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.star-14 {
+  top: 85%;
+  left: 35%;
+  width: 1px;
+  height: 1px;
+  animation: float-star-2 8s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.star-15 {
+  top: 80%;
+  left: 55%;
+  width: 1.5px;
+  height: 1.5px;
+  animation: float-star-3 13s ease-in-out infinite;
+  animation-delay: 4s;
+}

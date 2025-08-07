@@ -1,0 +1,249 @@
+{
+    "heroSection": {
+        "title": "About Alumni Portal",
+        "subtitle": "Connecting Alumni, Building Networks, Creating Opportunities",
+        "description": "A comprehensive platform designed to strengthen the bond between our institution and its alumni, fostering lifelong connections and professional growth.",
+        "stats": [
+            {
+                "label": "Active Alumni",
+                "value": "160+",
+                "icon": "users"
+            },
+            {
+                "label": "Success Stories",
+                "value": "100+",
+                "icon": "trophy"
+            },
+            {
+                "label": "Events Hosted",
+                "value": "10+",
+                "icon": "calendar"
+            },
+            {
+                "label": "Years of Excellence",
+                "value": "20+",
+                "icon": "star"
+            }
+        ]
+    },
+    "aboutProject": {
+        "title": "About the Project",
+        "description": "The Alumni Portal is a modern, comprehensive platform designed to bridge the gap between our institution and its distinguished alumni community. This project aims to create a vibrant ecosystem where former students can reconnect, share experiences, and contribute to the growth of current students.",
+        "features": [
+            {
+                "title": "Alumni Directory",
+                "description": "Comprehensive search and filter system to find and connect with fellow alumni",
+                "icon": "users"
+            },
+            {
+                "title": "Interactive Dashboard",
+                "description": "Personalized dashboard with news, events, and networking opportunities",
+                "icon": "chart"
+            },
+            {
+                "title": "Real-time Communication",
+                "description": "Chat system and notifications to keep the community connected",
+                "icon": "message"
+            },
+            {
+                "title": "Career Opportunities",
+                "description": "Job postings and mentorship programs for career advancement",
+                "icon": "briefcase"
+            },
+            {
+                "title": "Success Stories",
+                "description": "Platform to share achievements and inspire fellow alumni",
+                "icon": "trophy"
+            }
+        ],
+        "technologies": [
+            {
+                "name": "React",
+                "description": "Modern frontend framework",
+                "color": "#61DAFB"
+            },
+            {
+                "name": "Node.js",
+                "description": "Backend runtime environment",
+                "color": "#339933"
+            },
+            {
+                "name": "MongoDB",
+                "description": "NoSQL database",
+                "color": "#47A248"
+            },
+            {
+                "name": "Socket.io",
+                "description": "Real-time communication",
+                "color": "#010101"
+            },
+            {
+                "name": "Tailwind CSS",
+                "description": "Utility-first CSS framework",
+                "color": "#06B6D4"
+            },
+            {
+                "name": "Framer Motion",
+                "description": "Animation library",
+                "color": "#FF0080"
+            }
+        ]
+    },
+"aboutInstitution": {
+  "title": "Jawahar Navodaya Vidyalaya, Chittorgarh",
+  "fullName": "Jawahar Navodaya Vidyalaya, Mandaphia, Chittorgarh, Rajasthan",
+  "description": "Welcome to our dream come true – Jawahar Navodaya Vidyalaya, Chittorgarh (Raj). Situated at Mandaphia, 40 km from the district headquarters, it is one of the premier integrated schools under the unique Navodaya Vidyalaya System, which provides quality education to talented students from rural areas.",
+  "history": "Established in 1987 as part of the National Policy on Education – 1986, JNV Chittorgarh was founded with the aim of identifying and nurturing rural talent. Since then, it has grown into a center of academic excellence and holistic development.",
+  "vision": "To bring out the best in rural children through modern, value-based, and holistic education in a residential environment.",
+  "mission": "To provide quality education to talented students, predominantly from rural areas, and enable them to meet the challenges of the modern world while retaining their cultural roots.",
+  "values": [
+    { "title": "Excellence", "description": "Achieving the highest standards in academic and co-curricular pursuits" },
+    { "title": "Discipline", "description": "Fostering a structured and respectful learning environment" },
+    { "title": "Integrity", "description": "Promoting honesty, transparency, and moral strength" },
+    { "title": "Empowerment", "description": "Encouraging self-reliance and leadership in every student" },
+    { "title": "Inclusivity", "description": "Providing equal opportunities to all, regardless of background" }
+  ],
+  "achievements": [
+    "Established in 1987 under Navodaya Vidyalaya Samiti",
+    "Focus on rural student excellence in academics and co-curricular activities",
+    "Fully residential co-ed CBSE-affiliated school",
+    "100% pass rate in CBSE Class XII board exams for three consecutive years (2021–2023)",
+    "100% pass rate in CBSE Class X board exams for three consecutive years (2021–2023)"
+  ]
+},
+
+    "aboutDevelopers": {
+        "title": "Meet the Development Team",
+        "description": "This alumni portal is crafted with passion and dedication by a team of talented developers who believe in the power of technology to connect people and create meaningful experiences.",
+        "team": [
+            {
+                "name": "Sumit Dhaker",
+                "role": "Lead Developer",
+                "description": "Man behind the project, specializing in full-stack development and the creation of innovative web applications which we are using here.",
+                "expertise": [
+                    "React",
+                    "Node.js",
+                    "Full-Stack Development",
+                    "Cloud Deployment (Vercel, Render)",
+                    "Authentication & JWT",
+                    "Database Design",
+                    "Responsive Web Design"
+                ],
+                "avatar": "https://picsum.photos/id/236/200/300",
+                "social": {
+                    "github": "https://github.com/Sumitdkd",
+                    "linkedin": "https://www.linkedin.com/in/sumitdhaker/",
+                    "instagram": "https://www.instagram.com/sumit26_dhaker/",
+                    "website": "https://github.com/Sumitdkd"
+                },
+                "quote": "One man army behind this project."
+            },
+            {
+                "name": "Tanisha Patidar",
+                "role": "Co-Developer",
+                "description": "UI/UX design, database management, and API integration, ensuring the portal runs smoothly and efficiently.",
+                "expertise": [
+                    "Node.js",
+                    "Express",
+                    "MongoDB",
+                    "API Development",
+                    "Server Management"
+                ],
+                "avatar": "https://picsum.photos/id/238/200/300",
+                "social": {
+                    "github": "#",
+                    "linkedin": "#",
+                    "instagram": "#",
+                    "website": "#"
+                },
+                "quote": "Ensuring the portal runs smoothly and efficiently."
+            }
+        ],
+        "technologies": {
+            "frontend": [
+                "React",
+                "Tailwind CSS",
+                "Framer Motion",
+                "Heroicons"
+            ],
+            "backend": [
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Socket.io"
+            ],
+            "tools": [
+                "VS Code",
+                "Git",
+                "Postman"
+            ],
+            "deployment": [
+                "Vercel",
+                "MongoDB Atlas",
+                "Cloudinary"
+            ]
+        },
+        "developmentProcess": [
+            {
+                "phase": "Planning & Design",
+                "description": "Comprehensive requirement analysis and UI/UX design",
+                "duration": "2 weeks"
+            },
+            {
+                "phase": "Frontend Development",
+                "description": "Building responsive and interactive user interfaces",
+                "duration": "4 weeks"
+            },
+            {
+                "phase": "Backend Development",
+                "description": "Creating robust APIs and database architecture",
+                "duration": "3 weeks"
+            },
+            {
+                "phase": "Integration & Testing",
+                "description": "Connecting all components and thorough testing",
+                "duration": "2 weeks"
+            },
+            {
+                "phase": "Deployment & Launch",
+                "description": "Production deployment and launch preparations",
+                "duration": "1 week"
+            }
+        ]
+    },
+"testimonials": [
+  {
+    "name": "Dr. R.K. Rawal",
+    "role": "Principal, JNV Chittorgarh",
+    "message": "The JNV MAA portal is a visionary step that has made alumni interaction more meaningful. It's a bridge between our past and future.",
+    "avatar": "https://picsum.photos/id/241/200/300"
+  },
+  {
+    "name": "Suman Sharma",
+    "role": "Alumni Coordinator, JNV Chittorgarh",
+    "message": "Engagement has multiplied thanks to this platform. It’s now easier to organize events and keep alumni updated.",
+    "avatar": "https://picsum.photos/id/242/200/300"
+  },
+  {
+    "name": "Amit Joshi",
+    "role": "Alumni (Batch 2010)",
+    "message": "JNV MAA keeps me connected with my roots. I feel proud to see the institution evolve and stay connected with us.",
+    "avatar": "https://picsum.photos/id/243/200/300"
+  }
+],
+
+"contactInfo": {
+  "title": "Get in Touch",
+  "description": "Have questions about the portal or want to contribute? We'd love to hear from you!",
+  "email": "jnvchittorgarhalumni@gmail.com",
+  "phone": "01470-242639",
+  "address": " Mandaphia, Chittorgarh, Rajasthan – 312027",
+  "socialMedia": {
+    "facebook": "https://facebook.com/jnvchittorgarh",
+    "twitter": "https://twitter.com/jnvchittorgarh",
+    "linkedin": "https://linkedin.com/school/jnvchittorgarh",
+    "instagram": "https://instagram.com/jnvchittorgarh"
+  }
+}
+
+}
