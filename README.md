@@ -119,3 +119,4 @@ Electronics & Communication Engineering
 NIT Patna | Batch 2026
 
 Project: JNV MAA - JNV Mandphia Alumni Association
+URL : https://jnv-maa-alumni-portal.vercel.app/
