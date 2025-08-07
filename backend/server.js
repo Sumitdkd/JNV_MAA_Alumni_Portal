@@ -36,13 +36,21 @@ app.use(helmet({
 }));
 
 // --- CORS CONFIGURATION ---
+// const allowedOrigins = [
+//     "https://davjjp-alumni-crhfw.ondigitalocean.app",
+//     "https://alumni-portal-davjjp.vercel.app",
+//     "http://localhost:3000",
+//     "http://localhost:3001",
+//     "https://alumni-davjjp.netlify.app",
+//     "http://192.168.9.39:3000",
+// ];
 const allowedOrigins = [
-    "https://davjjp-alumni-crhfw.ondigitalocean.app",
-    "https://alumni-portal-davjjp.vercel.app",
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "https://alumni-davjjp.netlify.app",
-    "http://192.168.9.39:3000",
+  "https://davjjp-alumni-crhfw.ondigitalocean.app",
+  "https://alumni-portal-davjjp.vercel.app",
+  "http://localhost:3000",
+  "https://alumni-davjjp.netlify.app",
+  "http://192.168.9.39:3000",
+  "https://jnv-maa-alumni-portal.vercel.app"  // ✅ Your Vercel frontend
 ];
 
 const corsOptions = {
