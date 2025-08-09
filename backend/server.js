@@ -56,7 +56,7 @@ app.use(helmet({
 // };
 // app.use(cors(corsOptions));
 app.use(cors({
-  origin: ["https://jnv-maa-alumni-portal.vercel.app"],
+  origin: ["https://jnv-maa-alumni-portal.vercel.app/api"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
