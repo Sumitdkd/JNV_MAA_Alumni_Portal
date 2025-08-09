@@ -37,31 +37,23 @@ app.use(helmet({
 
 // --- CORS CONFIGURATION ---
 
-// const allowedOrigins = [
-//   "http://localhost:3000",,
-//   "http://192.168.9.39:3000",
-//   "https://jnv-maa-alumni-portal.vercel.app"  // ✅ Your Vercel frontend
-// ];
+const allowedOrigins = [
+  "http://localhost:3001",
+  "https://jnv-maa-alumni-portal.vercel.app"  // ✅ Your Vercel frontend
+];
 
-// const corsOptions = {
-//     origin: function (origin, callback) {
-//         if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-//             callback(null, true)
-//         } else {
-//             callback(new Error('Not allowed by CORS'))
-//         }
-//     },
-//     methods: ["GET", "POST", "PUT", "DELETE"],
-//     credentials: true
-// };
-// app.use(cors(corsOptions));
-app.use(cors({
-  origin: ["https://jnv-maa-alumni-portal.vercel.app"],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
-
-
+const corsOptions = {
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    },
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+};
+app.use(cors(corsOptions));
 
 app.use(express.json({ limit: '10mb' }));
 app.use(fileUpload({
