@@ -36,41 +36,34 @@ app.use(helmet({
 }));
 
 // --- CORS CONFIGURATION ---
-// const allowedOrigins = [
-//     "https://davjjp-alumni-crhfw.ondigitalocean.app",
-//     "https://alumni-portal-davjjp.vercel.app",
-//     "http://localhost:3000",
-//     "http://localhost:3001",
-//     "https://alumni-davjjp.netlify.app",
-//     "http://192.168.9.39:3000",
-// ];
-const allowedOrigins = [
-  "https://davjjp-alumni-crhfw.ondigitalocean.app",
-  "https://alumni-portal-davjjp.vercel.app",
-  "http://localhost:3000",
-  "https://alumni-davjjp.netlify.app",
-  "http://192.168.9.39:3000",
-  "https://jnv-maa-alumni-portal.vercel.app"  // ✅ Your Vercel frontend
-];
 
-const corsOptions = {
-    origin: function (origin, callback) {
-        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'))
-        }
-    },
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
-};
-app.use(cors(corsOptions));
-// app.use(
-//     cors({
-//         origin: "http://localhost:3000",
-//         credentials: true,
-//     })
-// )
+// const allowedOrigins = [
+//   "https://davjjp-alumni-crhfw.ondigitalocean.app",
+//   "https://alumni-portal-davjjp.vercel.app",
+//   "http://localhost:3000",
+//   "https://alumni-davjjp.netlify.app",
+//   "http://192.168.9.39:3000",
+//   "https://jnv-maa-alumni-portal.vercel.app"  // ✅ Your Vercel frontend
+// ];
+
+// const corsOptions = {
+//     origin: function (origin, callback) {
+//         if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+//             callback(null, true)
+//         } else {
+//             callback(new Error('Not allowed by CORS'))
+//         }
+//     },
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     credentials: true
+// };
+// app.use(cors(corsOptions));
+app.use(cors({
+  origin: ["https://jnv-maa-alumni-portal.vercel.app"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 
 
 app.use(express.json({ limit: '10mb' }));
